@@ -34,7 +34,7 @@ import java.util.stream.Stream;
  *    • l'utilisateur tape 13 puis 21
  *    • l'algorithme réponds : "Dans une minute, il sera 13 heure(s) 22"
  */
-public class Application {
+public class TP1Et2 {
 
     public static void main(String[] args) {
         exo8();
