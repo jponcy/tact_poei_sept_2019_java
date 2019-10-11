@@ -1,0 +1,46 @@
+@startuml TP5_1
+
+' note top: as consigne #NavajoWhite
+'     Coucou
+' end note
+
+legend top
+    <b>Consignes</b>
+    <back>                                                                                                    </back>
+    * Créer la classe Company
+    * L'utiliser dans une classe "main"
+    * Créer la classe Person
+    * L'utiliser dans la classe "main" préalablement créée
+    * Finir les classes
+    * Manipuler les différents objets pour faire des
+       affichages de données qui changes dans le temps
+end legend
+
+' legend
+' |= |= Type |
+' |<back:#FF0000>   </back>| Type A class |
+' |<back:#00FF00>   </back>| Type B class |
+' |<back:blue>   </back>| Type C class |
+' endlegend
+
+class Person {
+    {field} -lastname: String {readOnly}
+    {field} -firstname: String {readOnly}
+    {field} -active: boolean
+    {field} -age: int
+    {field} -grade: float
+}
+
+class Company {
+    {field} -name: String
+}
+
+class Contract {
+    {field} -startedAt: LocalDate
+    {field} -endedAt[0..1]: LocalDate
+}
+
+Contract "*" -left-> "1" Person
+Contract -> "1" Company
+
+@enduml
