@@ -1,4 +1,4 @@
-package com.tactfactory.poei;
+package com.tactfactory.poei.bases;
 
 import java.text.MessageFormat;
 import java.util.Scanner;

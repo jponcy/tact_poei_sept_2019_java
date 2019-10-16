@@ -2,3 +2,5 @@
 *.pdf
 *.odt
 /bin/
+/cours/
+/doc/
